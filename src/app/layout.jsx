@@ -1,10 +1,7 @@
 import localFont from "next/font/local";
+import { Suspense } from "react";
 import Footer from "../components/footer/page";
 import "./globals.css";
-
-// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
-// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
-export const instant = false;
 
 const jakartaSans = localFont({
   src: [
@@ -71,7 +68,9 @@ export default function RootLayout({ children }) {
       <html lang="en" className={`${jakartaSans.variable} ${dmSans.variable}`}>
         <body className={`${jakartaSans.className} font-sans antialiased`}>
           {children}
-          <Footer />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Footer />
+          </Suspense>
         </body>
       </html>
     </>

@@ -1,9 +1,9 @@
 import React from "react";
-import Web from "../../../public/images/audyweb.jpg";
-import Macbook from "../../../public/images/macbbok&iphone.png";
-import MIDAZ from "../../../public/images/midaz.png";
-import CMS from "../../../public/images/screencapture-cms-audydental-login-2025-11-14-14_46_25.png";
-import SIMRS from "../../../public/images/simrs.png";
+import Web from "../../public/images/audyweb.jpg";
+import Macbook from "../../public/images/macbbok&iphone.png";
+import MIDAZ from "../../public/images/midaz.png";
+import CMS from "../../public/images/screencapture-cms-audydental-login-2025-11-14-14_46_25.png";
+import SIMRS from "../../public/images/simrs.png";
 import ProjectList from "./project-list";
 
 const projects = [
@@ -12,9 +12,9 @@ const projects = [
     title: "Hospital Information Management System",
     image: SIMRS,
     description:
-      "Developed a customized dashboard serving as the central Content Management System (CMS) for the main website. ",
+      "Developed and maintained a Hospital Information Management System (SIMRS) for a local hospital, streamlining patient data management and improving operational efficiency.",
     color: "#3B82F6",
-    tags: ["React", "Typescript", "Tailwind"],
+    tags: ["Vue", "Vuex", "Bootstrap"],
   },
   {
     ongoing: false,
@@ -70,7 +70,7 @@ const Projects = () => {
   return (
     <section
       id="skills"
-      className="grid-row grid gap-4 border-t border-gray-200 py-8 md:gap-8 md:py-16"
+      className="grid-row grid gap-4 border-gray-200 py-8 md:gap-8 md:py-14"
     >
       <h2 className="text-2xl font-semibold"> Projects </h2>
       <p className="text-[18px]">

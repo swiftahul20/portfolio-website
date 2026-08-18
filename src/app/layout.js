@@ -1,5 +1,5 @@
 import localFont from "next/font/local";
-import Footer from "./component/footer/page";
+import Footer from "../components/footer/page";
 import "./globals.css";
 
 const jakartaSans = localFont({

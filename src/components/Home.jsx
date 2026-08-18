@@ -51,7 +51,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          — a remote front-end developer based in Yogyakarta.
+          — a front-end developer based in Yogyakarta.
         </motion.span>
 
         <motion.div

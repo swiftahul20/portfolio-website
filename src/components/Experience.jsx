@@ -21,7 +21,7 @@ const experiences = [
       "Refactored and maintained a comprehensive Hospital Management System using Vue.js and Vuex, spearheading the development of critical new features including Nursing and Doctor Assessments, laboratory procedures, and complex forms like Medical Rehabilitation, Hemodialysis assessment, etc.",
   },
   {
-    company: "PT Mahakam Berkah Bersama",
+    company: "DM ID Group",
     position: "Front-end Developer",
     period: "Jul 2025 - Jul 2026",
     summary:

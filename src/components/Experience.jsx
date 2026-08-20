@@ -12,6 +12,11 @@ const item = {
   show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };
 
+const rowVariant = {
+  hidden: { opacity: 0, y: 24 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+};
+
 const experiences = [
   {
     company: "PT Mahakam Berkah Bersama",
@@ -66,25 +71,26 @@ const Experience = () => {
         Experience
       </motion.h2>
 
-      <motion.div
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.1 }}
-        variants={container}
-        className="space-y-2"
-      >
+      {/* Plain div now — each row below triggers off its own scroll
+          position instead of a shared container, so scrolling a little
+          reveals just the first item, scrolling further reveals the
+          next, and so on. */}
+      <div className="space-y-2">
         {experiences.map((experience, i) => (
           <motion.div
             key={i}
-            variants={item}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.4 }}
+            variants={rowVariant}
             className="group border-b border-gray-100 py-6 transition-colors hover:border-blue-200"
           >
             <div className="flex flex-row items-start justify-between">
               <div>
-                <h3 className="mb-1 text-xl font-medium text-gray-900 transition-colors group-hover:text-blue-400">
+                <h3 className="mb-1 text-xl font-medium text-gray-900 transition-colors group-hover:text-blue-600">
                   {experience.company}
                 </h3>
-                <p className="relax mb-2 text-lg text-gray-700">
+                <p className="mb-2 text-lg text-gray-700">
                   {experience.position}
                 </p>
               </div>
@@ -92,21 +98,26 @@ const Experience = () => {
                 {experience.period}
               </p>
             </div>
-            <p className="text-base/7 text-gray-400">{experience.summary}</p>
+            <p className="text-gray-600">{experience.summary}</p>
           </motion.div>
         ))}
 
-        <motion.div variants={item}>
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.6 }}
+          variants={rowVariant}
+        >
           <a
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors hover:text-blue-400 hover:decoration-blue-400"
+            className="inline-block text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors hover:text-blue-600 hover:decoration-blue-600"
           >
             See full resume
           </a>
         </motion.div>
-      </motion.div>
+      </div>
     </section>
   );
 };

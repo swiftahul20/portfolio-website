@@ -4,13 +4,14 @@ import Macbook from "../../public/images/macbbok&iphone.png";
 import MIDAZ from "../../public/images/midaz.png";
 import CMS from "../../public/images/screencapture-cms-audydental-login-2025-11-14-14_46_25.png";
 import SIMRS from "../../public/images/simrs.png";
+import SIMRS01 from "../../public/images/simrs01.png";
 import ProjectList from "./project-list";
 
 const projects = [
   {
-    ongoing: true,
+    ongoing: false,
     title: "Hospital Information Management System",
-    image: SIMRS,
+    image: SIMRS01,
     description:
       "Developed and maintained a Hospital Information Management System (SIMRS) for a local hospital, streamlining patient data management and improving operational efficiency.",
     color: "#3B82F6",

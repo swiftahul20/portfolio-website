@@ -26,7 +26,11 @@ const ProjectCard = ({ project, isHovered, onHover, onLeave }) => {
       >
         <div className="relative h-40 w-full overflow-hidden rounded-lg border border-gray-100 shadow-sm md:h-[110px] md:w-[140px]">
           <Image
-            src={project.image}
+            src={
+              project.image == "none"
+                ? "/images/placeholder.png"
+                : project.image
+            }
             alt={project.title}
             fill
             sizes="(min-width: 768px) 140px, 100vw"

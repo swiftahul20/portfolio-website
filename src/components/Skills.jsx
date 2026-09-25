@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const skillsData = {
   Languages: ["JavaScript (ES6)", "TypeScript", "HTML 5", "CSS"],
-  Frameworks: ["React", "Next", "Vue", "Tailwind", "Express"],
-  Tools: ["Git & GitLab", "MongoDB", "MySQL", "Redux", "Zustand", "Vuex"],
+  Frameworks: ["React", "Next", "Vue", "Tailwind", "Express", "Go (Golang)"],
+  Tools: ["Git & GitLab", "MongoDB", "PostgreSQL", "Redux", "Zustand", "Vuex"],
   Other: ["Responsive Design", "SEO", "Scrum", "Clean Code"],
 };
 

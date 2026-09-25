@@ -1,5 +1,6 @@
 import React from "react";
 import Web from "../../public/images/audyweb.jpg";
+import BackendGO from "../../public/images/BackendGO.png";
 import Macbook from "../../public/images/macbbok&iphone.png";
 import MIDAZ from "../../public/images/midaz.png";
 import CMS from "../../public/images/screencapture-cms-audydental-login-2025-11-14-14_46_25.png";
@@ -8,6 +9,16 @@ import SIMRS01 from "../../public/images/simrs01.png";
 import ProjectList from "./project-list";
 
 const projects = [
+  {
+    ongoing: false,
+    title: "Personal Expense Tracker API",
+    image: BackendGO,
+    url: "https://github.com/swiftahul20/personal-expense-tracker",
+    description:
+      "A production-grade REST API built in Go, featuring JWT authentication with refresh token rotation, per-user data isolation enforced at the database query level, and a fully containerized deployment on Aiven.",
+    color: "#3B82F6",
+    tags: ["Golang", "Chi", "JWT", "Docker", "Swag"],
+  },
   {
     ongoing: false,
     title: "Hospital Information Management System",

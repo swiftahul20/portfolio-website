@@ -27,7 +27,7 @@ const projects = [
     title: "Personal Expense Tracker",
     image: PersonalExpenseTracker,
     githubUrl: "https://github.com/swiftahul20/personal-expense-tracker-app",
-    liveUrl: "",
+    liveUrl: "https://swiftahul20-expense-tracker.vercel.app",
     description:
       "A Personal Expense Tracker app that helps users manage their finances by tracking income, expenses, and generating insightful reports.",
     color: "#3B82F6",

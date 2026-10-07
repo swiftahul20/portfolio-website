@@ -1,0 +1,12 @@
+services:
+  portfolio:
+    build: .
+    container_name: portfolio-site
+    ports:
+      - "8082:80"
+    networks:
+      - shared-net
+
+networks:
+  shared-net:
+    external: true

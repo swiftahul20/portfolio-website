@@ -1,0 +1,34 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 298B 0.0s done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:22-alpine
+#2 ...
+
+#3 [auth] library/nginx:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#4 [internal] load metadata for docker.io/library/nginx:alpine
+#4 ...
+
+#2 [internal] load metadata for docker.io/library/node:22-alpine
+#2 DONE 4.2s
+
+#4 [internal] load metadata for docker.io/library/nginx:alpine
+#4 ERROR: failed to authorize: failed to fetch oauth token: Post "https://auth.docker.io/token": dial tcp: lookup auth.docker.io: no such host
+------
+ > [internal] load metadata for docker.io/library/nginx:alpine:
+------
+Dockerfile:9
+--------------------
+   7 |     RUN npm run build
+   8 |     
+   9 | >>> FROM nginx:alpine
+  10 |     COPY --from=builder /app/out /usr/share/nginx/html
+  11 |     EXPOSE 80
+--------------------
+ERROR: failed to build: failed to solve: failed to fetch oauth token: Post "https://auth.docker.io/token": dial tcp: lookup auth.docker.io: no such host
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/56wo73y4rbmkpjo2z8jxbk5m3

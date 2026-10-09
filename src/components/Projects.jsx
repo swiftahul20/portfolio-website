@@ -16,7 +16,7 @@ const projects = [
     title: "Personal Messenger",
     image: PersonalMessenger,
     githubUrl: "https://github.com/swiftahul20/personal-messenger",
-    liveUrl: "",
+    liveUrl: "https://chat.miftahulhabib.my.id",
     description:
       "A Personal Messenger app supporting real-time messaging, join rooms, and chat with friends instantly.",
     color: "#3B82F6",
@@ -27,7 +27,7 @@ const projects = [
     title: "Personal Expense Tracker",
     image: PersonalExpenseTracker,
     githubUrl: "https://github.com/swiftahul20/personal-expense-tracker-app",
-    liveUrl: "https://swiftahul20-expense-tracker.vercel.app",
+    liveUrl: "https://expense-tracker.miftahulhabib.my.id",
     description:
       "A Personal Expense Tracker app that helps users manage their finances by tracking income, expenses, and generating insightful reports.",
     color: "#3B82F6",
@@ -39,6 +39,7 @@ const projects = [
     image: BackendGO,
     githubUrl: "https://github.com/swiftahul20/personal-expense-tracker",
     liveUrl: "",
+    apiDocs: "https://docs.miftahulhabib.my.id/",
     description:
       "A production-grade REST API built in Go, featuring JWT authentication with refresh token rotation, per-user data isolation enforced at the database query level, and a fully containerized deployment on Aiven.",
     color: "#3B82F6",

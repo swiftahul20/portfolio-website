@@ -1,6 +1,6 @@
 "use client";
 
-import { ExternalLink, Github } from "lucide-react";
+import { Braces, ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
@@ -33,7 +33,7 @@ const ProjectCard = ({ project, isHovered, onHover, onLeave }) => {
           </h3>
           <div className="flex items-center gap-2 text-gray-500">
             {project.githubUrl && (
-              <a
+              <Link
                 href={project.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -41,7 +41,7 @@ const ProjectCard = ({ project, isHovered, onHover, onLeave }) => {
                 className="transition hover:text-gray-900"
               >
                 <Github size={18} />
-              </a>
+              </Link>
             )}
             {project.liveUrl && (
               <a
@@ -52,6 +52,17 @@ const ProjectCard = ({ project, isHovered, onHover, onLeave }) => {
                 className="transition hover:text-gray-900"
               >
                 <ExternalLink size={18} />
+              </a>
+            )}
+            {project.apiDocs && (
+              <a
+                href={project.apiDocs}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View API documentation"
+                className="transition hover:text-gray-900"
+              >
+                <Braces size={18} />
               </a>
             )}
           </div>

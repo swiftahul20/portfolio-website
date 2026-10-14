@@ -22,10 +22,7 @@ const About = () => {
         transition={{ duration: 0.5, delay: 0.1 }}
         className="text-lg/relaxed font-normal text-balance text-slate-600"
       >
-        Hi! I&rsquo;ve been building for the web as a front-end developer for
-        over five years. My main focus is working with JavaScript frameworks to
-        bring designs to life—creating clean, easy-to-use web applications that
-        run smoothly and are built to last :D
+        Hi! I build fullstack web apps with a heavy focus on high-performance frontends. For over five years, I’ve been combining UI frameworks like React and Vue with Golang and Express on the backend to deliver seamless, end-to-end web experiences.
       </motion.p>
     </div>
   );
